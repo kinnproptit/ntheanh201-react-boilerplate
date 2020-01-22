@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import { ErrorBoundary } from 'ui'
 
 import { Page } from 'tabler-react'
-import { DefaultNavbar } from '../../../../app/Shared/components/DefaultNavbar'
+
+import { Layout } from '../../../../app/Shared/components/Layout'
 
 export const NormalLayout = ({
   title = false,
@@ -19,11 +20,11 @@ export const NormalLayout = ({
         {title && <Heading>{title}</Heading>}
         <NormalLayoutWrapper column={column}>{children}</NormalLayoutWrapper>
       </ContentWrapper> */}
-      <DefaultNavbar>
+      <Layout>
         <ErrorBoundary>
           <Page.Content title={title}>{children}</Page.Content>
         </ErrorBoundary>
-      </DefaultNavbar>
+      </Layout>
     </ContentContainer>
   )
 }

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect } from 'react'
-// import axios from 'axios'
+import axios from 'axios'
 
 // import environments from 'environments'
 import { useState } from 'core'
@@ -10,9 +10,7 @@ export const PreloaderContext = createContext()
 export const Preloader = ({ children }) => {
   const [state, setState] = useState({
     loading: true,
-    sessions: [],
-    parts: [],
-    sentences: []
+    isLoggedIn: false
   })
 
   useEffect(() => {
