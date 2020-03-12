@@ -1,5 +1,5 @@
 {
-  "name": "ntheanh201-react-boilerplate",
+  "name": "event-booker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,8 @@
     "@babel/preset-flow": "^7.8.3",
     "@loadable/component": "^5.11.0",
     "animated-styled-components": "^0.6.0",
-    "axios": "^0.19.1",
     "babel-plugin-inline-react-svg": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^6.0.3",

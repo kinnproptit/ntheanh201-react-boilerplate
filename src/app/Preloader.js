@@ -1,5 +1,4 @@
 import React, { createContext, useEffect } from 'react'
-import axios from 'axios'
 
 // import environments from 'environments'
 import { useState } from 'core'
@@ -14,12 +13,6 @@ export const Preloader = ({ children }) => {
   })
 
   useEffect(() => {
-    const fetchData = async () => {
-      // const sessions = await axios(`${environments.baseUrl}sessions`)
-      // const parts = await axios(`${environments.baseUrl}parts`)
-      setState({ loading: false })
-    }
-    fetchData()
   }, [])
 
   if (state.loading) {
