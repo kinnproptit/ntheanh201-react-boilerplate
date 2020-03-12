@@ -86,7 +86,7 @@ module.exports = ({ mode, outputPath }) => {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         inject: true,
-        template: '../public/index.html'
+        template: './index.html'
       }),
       new CaseSensitivePathsPlugin()
     ],
